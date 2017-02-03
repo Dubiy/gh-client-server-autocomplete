@@ -11,14 +11,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/angular.js', (req, res) => {
-    res.sendFile(__dirname + '/node_modules/angular/angular.min.js');
-});
-
-app.get('/script.js', (req, res) => {
-    res.sendFile(__dirname + '/script.js');
-});
-
 app.get('/style.css', (req, res) => {
     res.sendFile(__dirname + '/style.css');
 });

@@ -1,6 +1,6 @@
 # Client-server
 
-![Client-server scheme](doc/Client-server-model.svg)
+![Client-server scheme](doc/Client-server-model.png)
 
 * Clients and servers exchange messages in a request–response messaging pattern.
 * The client sends a request, and the server returns a response.

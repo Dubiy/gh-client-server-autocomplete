@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src="angular.js"></script>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body ng-app="myApp">
+    <div class="auto-complete" ng-controller="SearchCtrl">
+
+        <div class="taglist">Selected: <span ng-repeat="item in selected track by $index">{{ item }}</span></div>
+        <input ng-model="prefix" ng-change="updList(this)" ng-keydown="onKey($event)" autofocus placeholder="Start typing...">
+        <ul>
+            <li ng-repeat="item in items" ng-click="addTag($index)" ng-class="{active: $index == current}">{{ item }}</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.auto-complete {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 200px;
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;
+}
+
+.taglist {
+    border: 1px solid gray;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.auto-complete input {
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.05);
+    border: 1px solid lightgray;
+}
+
+li {
+    padding: 5px;
+}
+
+li.active {
+    background-color: rgba(0,0,0,0.2);
+}
+
+span {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+span:before {
+    content: "#";
+}

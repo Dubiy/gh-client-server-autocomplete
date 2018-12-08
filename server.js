@@ -8,23 +8,28 @@ let express = require('express'),
 // app.use(express.static(__dirname + '/static/'));
 
 app.get('/', (req, res) => {
+    console.log('requested index.html');
     res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/angular.js', (req, res) => {
+    console.log('requested /angular.js');
     res.sendFile(__dirname + '/node_modules/angular/angular.min.js');
 });
 
 app.get('/script.js', (req, res) => {
+    console.log('requested /script.js');
     res.sendFile(__dirname + '/script.js');
 });
 
 app.get('/style.css', (req, res) => {
+    console.log('requested /style.css');
     res.sendFile(__dirname + '/style.css');
 });
 
 app.get('/q/:search', (req, res) => {
     let search = req.params.search;
+    console.log('requested /q/:search', search);
 
     var rrr = new RegExp("(\\b" + search + ")\\w+\\b", 'ig');
     var str = `The standard Lorem Ipsum passage, used since the 1500s
